@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes rotateAndSlideUp {
+  0% {
+    transform: rotate(0deg);
+    top: 0;
+  }
+  50% {
+    transform: rotate(180deg);
+    top: -100px;
+  }
+  100% {
+    transform: rotate(360deg);
+    top: 0;
+  }
+}
+
+/* Add animation class to the custom keyframes */
+@layer utilities {
+  .rotate-slide-up {
+    animation: rotateAndSlideUp 1.5s forwards;
+  }
+}
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @layer utilities {
+    .fadeInUp {
+      animation: fadeInUp 1s forwards;
+    }
+  }

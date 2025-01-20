@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./main.css" rel="stylesheet" />
+    <title>Layers-official</title>
+    <style>
+      /* Add a transition to the navbar for a smooth effect */
+      #navbar {
+        transition: all 0.3s ease; /* Smooth transition for background, color, and shadow */
+      }
+
+      /* Add transition for scroll text opacity */
+      #scrollText {
+        transition: opacity 0.5s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Wrapper -->
+    <div class="">
+      <!-- Background Section -->
+      <div
+        class="relative h-[120vh] bg-[url(./Image/front-watch_background.webp)] bg-cover bg-center"
+      >
+        <!-- Navbar (Existing Code) -->
+
+        <nav
+          id="navbar"
+          class="bg-transparent fixed top-0 transition-all duration-300 w-full z-10"
+        >
+          <div
+            class="flex justify-between items-center px-8 py-4 w-[1350px] mx-auto"
+          >
+            <h1 class="font-extrabold text-3xl text-gray-300 cursor-pointer">
+              <i>LAYERS</i>
+            </h1>
+            <ul
+              class="flex gap-9 py-3 w-[601px] mx-auto justify-between cursor-pointer"
+            >
+              <li
+                class="font-bold text-gray-100 hover:text-gray-200 hover:underline text-lg"
+              >
+                Our Story
+              </li>
+              <li
+                class="font-bold text-gray-100 hover:text-gray-200 hover:underline text-lg"
+              >
+                Anarc Watch
+              </li>
+              <li
+                class="font-bold text-gray-100 hover:text-gray-200 hover:underline text-lg"
+              >
+                Arcs Strap
+              </li>
+              <li
+                class="font-bold text-gray-100 hover:text-gray-200 hover:underline text-lg"
+              >
+                Skins
+              </li>
+            </ul>
+            <div class="flex items-center space-x-6">
+              <button
+                class="bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700"
+              >
+                Buy Now
+              </button>
+              <a href="#"
+                ><img
+                  src="./Image/search.png"
+                  width="25px"
+                  alt="Search Icon"
+                  class="hover:scale-125 transition-all duration-200"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./Image/center.png"
+                  width="35px"
+                  alt="User Icon"
+                  class="hover:scale-125 transition-all duration-200"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./Image/bag.png"
+                  width="25px"
+                  alt="Bag Icon"
+                  class="hover:scale-125 transition-all duration-200"
+              /></a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Bottom Left Section (ANARC Text and Bars) -->
+        <div
+          id="scrollText"
+          class="absolute bottom-5 left-0 opacity-0 transition-all duration-700"
+        >
+          <div class="flex items-center">
+            <!-- Left Bar -->
+            <div class="bg-blue-700 h-32 w-40"></div>
+            <!-- Text Section -->
+            <div
+              class="bg-blue-600 text-white text-6xl font-bold px-16 py-4 tracking-wide"
+            >
+              A N A R C
+            </div>
+            <!-- Right Bar -->
+            <div class="bg-blue-500 h-16 w-40"></div>
+          </div>
+          <p class="text-gray-800 text-lg font-semibold mt-2 ml-56">
+            Powerful. Accurate. Unique.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--feacher section-->
+    <div class="w-full bg-[#f4f1ed]">
+      <div class="max-w-[1550px] mx-auto flex gap-32 py-20">
+        <!-- Left section -->
+        <div id="feacher_scroll" class=" ">
+          <h2
+            id="feature-text"
+            class="font-mullish font-semibold text-5xl opacity-0 translate-y-10 transition-all duration-700 ease-out"
+          >
+            Designed in London.
+            <br />
+            Made for India.
+          </h2>
+          <p
+            id="feature-description"
+            class="font-mullish text-gray-500 py-5 text-2xl opacity-0 translate-y-10 transition-all duration-00 ease-out"
+          >
+            Beauty and geometry come together to <br />
+            create Anarc’s unique octagonal dial.
+          </p>
+        </div>
+        <!-- Right section (Image) -->
+        <div class="image-container px-40">
+          <img
+            id="feature-image"
+            src="./Image/feacher_section1_img.webp"
+            width="600px"
+            alt="Featured Image"
+            class="transition-transform duration-1000 ease-in-out transform-origin-center relative"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Video Section -->
+    <div class="w-full flex px-20 mx-auto relative">
+      <!-- Left Section (Text Content) -->
+      <div
+        class="w-1/2 flex flex-col justify-start items-start space-y-6 pl-10 py-20"
+      >
+        <h2
+          id="video-heading"
+          class="font-mullish font-semibold text-5xl opacity-0 translate-y-10 transition-all duration-1000 ease-out"
+        >
+          Forged in <br />
+          stainless steel.
+        </h2>
+
+        <p
+          id="video-description"
+          class="font-mullish text-gray-500 py-5 text-2xl opacity-0 translate-y-10 transition-all duration-1000 ease-out"
+        >
+          Unmatched design and a functional crown with haptics <br> that keeps up
+          with you.
+        </p>
+      </div>
+
+      <!-- Right Section (Video) -->
+      <div class="w-1/2 h-screen absolute right-0 ">
+        <video
+          id="feature-video"
+          class="w-full h-full object-cover  shadow-lg"
+          autoplay
+          muted
+          loop
+          playsinline
+        >
+          <source src="./Image/Feacher_section2_video.webm" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <script>
+      // Scroll effect for navbar and scroll text
+      // Debounce function to optimize scroll performance
+      function debounce(func, delay) {
+        let timer;
+        return function (...args) {
+          clearTimeout(timer);
+          timer = setTimeout(() => func.apply(this, args), delay);
+        };
+      }
+
+      // Scroll event listener with optimizations
+      window.addEventListener(
+        "scroll",
+        debounce(function () {
+          let navbar = document.getElementById("navbar");
+          let scrollText = document.getElementById("scrollText");
+
+          // Calculate the scroll position as a percentage
+          let scrollPosition = window.scrollY;
+          let scrollMax =
+            document.documentElement.scrollHeight - window.innerHeight;
+          let scrollPercent = scrollPosition / scrollMax;
+
+          // Apply styles progressively based on scroll percentage
+          let scrollTextOpacity = Math.min(1, scrollPercent * 3); // Faster opacity change
+          scrollText.style.opacity = scrollTextOpacity;
+
+          // Apply navbar transition styles when scrolling past a threshold
+          if (scrollPosition > 50) {
+            navbar.classList.remove("bg-transparent");
+            navbar.classList.add("bg-deepBlue", "shadow-lg");
+          } else {
+            navbar.classList.remove("bg-deepBlue", "shadow-lg");
+            navbar.classList.add("bg-transparent");
+          }
+
+          // Feature section animation
+          let text = document.getElementById("feature-text");
+          let description = document.getElementById("feature-description");
+          let image = document.getElementById("feature-image");
+
+          let textPosition = text.getBoundingClientRect().top;
+          let screenPosition = window.innerHeight;
+
+          if (textPosition < screenPosition) {
+            text.classList.add("fadeInUp");
+            description.classList.add("fadeInUp");
+          }
+
+          // Image rotation and slide-up effect
+          let imagePosition = image.getBoundingClientRect().top;
+          if (imagePosition < screenPosition) {
+            image.classList.add("rotate-slide-up");
+          }
+
+          // Video section animation
+          let heading = document.getElementById("video-heading");
+          let videoDescription = document.getElementById("video-description");
+
+          let headingPosition = heading.getBoundingClientRect().top;
+          let screenPos = window.innerHeight / 1.3;
+
+          if (headingPosition < screenPos) {
+            heading.classList.add("opacity-100", "translate-y-0");
+            videoDescription.classList.add("opacity-100", "translate-y-0");
+          }
+        }, 50)
+      ); // Debounce delay of 50ms for better performance
+    </script>
+  </body>
+</html>
